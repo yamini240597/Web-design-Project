@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.care_container {
+    display: flex;
+    justify-content: center;
+}
+
+.care_card {
+    background-color: #CCE2D7;
+    width: 32rem;
+    height: 35rem;
+    margin: 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: justify;
+    box-shadow: 0px 0px 20px 5px rgba(46, 117, 94, 0.5);
+}
+
+.care_card_image {
+    height: 12rem;
+    margin-bottom: 1rem;
+    background-size: cover;
+    border-radius: 1rem;
+}
+
+.right {
+    background-image: url('../images/right.jpg');
+}
+
+.watering {
+    background-image: url('../images/watering.jpg');
+}
+
+.soiling {
+    background-image: url('../images/soiling.jpg');
+}
+
+.light {
+    background-image: url('../images/sunlight.jpg');
+}
+
+.glass {
+    background-image: url('../images/glass.jpg');
+}
+
+.bugs {
+    background-image: url('../images/bugs.jpg');
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #2e765e;
+    font-weight: normal;
+    font-size: 30pt;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+h3 {
+    margin-top: 2rem;
+    color: #2e765e;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p, li {
+    color: #1b4739;
+}
+
+p {
+    padding-top: 1rem;
+}
+
+/* Setting footer properties for Care page */
+.footer_care {
+    text-align: right;
+    bottom: 0rem;
+    right: 0rem;
+    font-size: small;
+    color: black;
+}

@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 600px) {
+    * {
+        margin: 0;
+        font-family: sans-serif;
+    }
+}
+
+.body_vision {
+    width: 100%;
+    height: 85vh;
+    background-image: url('../images/vision_bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.main_vision {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #2e765e;
+    font-weight: normal;
+    font-size: 30pt;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+p {
+    padding-top: 1rem;
+    padding: 3rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    font-size: 16pt;
+    color:#1b4739;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+/* Styling the footer of the vision page */
+.footer_vision {
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    font-size: small;
+    color: black;
+}
+
+/* Media query */
+@media (max-width: 330px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .main_vision {
+        padding:1rem 5%;
+        padding-top: 8.5rem;
+    }
+}

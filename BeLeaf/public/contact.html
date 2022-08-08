@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title> Contact Us </title>
+        <link rel = "stylesheet" href = "css/styles.css">
+        <link rel = "stylesheet" href = "css/contact.css">
+        <link rel = "icon" href = "./images/logo.png" type = "image/png">
+    </head>
+
+    <body class = "contact">
+        <header>
+            <nav class = "navbar">
+                <img class = "logo" src = "images/logo.png" alt = "Logo">
+
+                <ul class = "menu">
+                    <li class = "menuItem"> <a href = "main.html"> Home </a></li>
+
+                    <li class = "menuItem"> 
+                        <button class = "menu_btn" type = "button"> About Us </button>
+                        <ul class = "submenu">
+                            <li> <a href = "vision.html"> Vision </a></li>
+                            <li> <a href = "founders.html"> Founders </a></li>
+                        </ul>
+                    </li>
+
+                    <li class = "menuItem">
+                        <button class = "menu_btn" type = "button"> Discover </button>
+                        <ul class = "submenu">
+                            <li> <a href = "agave.html"> Agave </a></li>
+                            <li> <a href = "aloe.html"> Aloe </a></li>
+                            <li> <a href = "echeveria.html"> Echeveria </a></li>
+                        </ul>
+                    </li>
+
+                    <li class = "menuItem"> <a href = "care.html"> Care Essentials </a></li>
+
+                    <li class = "menuItem"> <a href = "contact.html"> Contact </a></li>
+                    
+                </ul>
+            </div>
+        </header>
+
+        <form method="POST" action = "form.html">
+            <main class>            
+                <div class="contact_container">
+                    <div class="contact_box">
+                        <div class="left"></div>
+
+                        <div class="right">
+                            <h2> Contact Us </h2>
+                            <form action="/form" method="POST">
+                                <input type = "text" class = "field" placeholder = "Your Name" required>
+                                <input type = "email" class = "field" placeholder = "Your Email" required>
+                                <div class = "form_dropdown">
+                                    <select class = "query" name = "query" required>
+                                        <option value = "" class = "default"> What help do you need? </option>
+                                        <option value = "1"> Succulents </option>
+                                        <option value = "2"> Care </option>
+                                    </select>
+                                </div>
+                                <div class = "form-checkbox">
+                                    <label> Subscribe to our Newsletters?
+                                    <input type = "checkbox" name = "subscribe" value="yes" required> 
+                                    </label>
+                                </div>
+                                <textarea class = "field area" placeholder = "Message"></textarea>
+                                <button class = "contact_submit" type = "submit"> Submit </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </form>
+
+        <footer class = "footer_contact">
+            &#xA9;2022 Mid-Term | Image from Pexels
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.main_contact {
+    width: 100%;
+}
+
+.contact_container {
+    margin-top: 2rem;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+
+.contact_container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background: url('succulentplants1.jpg') no-repeat center;
+    background-size: cover; */
+    z-index: -1;
+    /* filter: blur(50px); */
+}
+
+.contact_box {
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #CCE2D7;
+    box-shadow: 0px 0px 20px 5px rgb(46, 118, 94, 0.5);
+}
+
+.left {
+    height: 100%;
+    background: url('../images/succulentplants1.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.right {
+    padding: 25px 40px;
+}
+
+h2 {
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    color: #2e765e;
+    font-family: sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 1rem;
+    background-color: #1b4739;
+}
+
+.field {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: 0.3s;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    color: #2e765e;
+}
+
+.field:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.field:focus {
+    background-color: #fff;
+    border: 2px solid rgba (30, 85, 250, 0.47);
+}
+
+.area {
+    min-height: 150px;
+}
+
+.form_dropdown select {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: 0.3s;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    color:rgba(0, 0, 0, 0.5);
+    color:#2e765e;
+}
+
+.form_dropdown select:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.form_dropdown select:focus {
+    background-color: #fff;
+    border: 2px solid rgba (30, 85, 250, 0.47);
+}
+
+.form_dropdown select:focus::after {
+    background-color: #fff;
+    border: 2px solid rgba (30, 85, 250, 0.47);
+}
+
+.form_checkbox, label {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: 0.3s;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    text-align: left;
+    display: inline-flex;
+    color:rgba(0, 0, 0, 0.5);
+}
+
+input[type=checkbox] {
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+}
+
+.contact_submit {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    background-color: transparent;
+    color: #1b4739;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #2e765e;
+    border-radius: 0.25rem;
+}
+
+.contact_submit:hover {
+    background-color: #1b4739;
+    color: #CCE2D7;
+    border: 1px solid #1b4739;
+    transition: 0.5s;
+    box-shadow: none;
+}
+
+.footer_contact {
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    font-size: small;
+    color: black;
+}

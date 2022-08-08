@@ -1,0 +1,295 @@
+/* STYLING ENTIRE WEBPAGE PROPERTIES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 600px) {
+    * {
+        margin: 0;
+        font-family: sans-serif;
+    }
+}
+
+/* Giving the entire webpage a font size, text color and margin */
+body {
+    font-family: sans-serif;
+    margin: 0.5rem;
+    background-color: #ece8e5;
+    /* color: #1b4739; */
+}
+
+/* Displayed an image as the background and used linear gradation in order to get a decent fade so that the text in front pops out */
+.landing_page {
+    width: 100%;
+    height: 85vh;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* NAVIGATION BAR PROPERTIES */
+/* Styling the navigation bar to look orderly and that includs both the logo and the menu*/
+nav {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Resized logo to a size that suits the webpage */
+header .logo {
+    width: 7rem;
+    height: auto;
+    display: flex;
+    margin-left: 0.25rem;
+}
+
+/* To remove the bullets from the menu items */
+header ul {
+    list-style-type: none;
+}
+
+header button {
+    color: #2e765e;
+}
+
+/* Choose flex for display and gave the direction as row to have a horizontal menu bar */
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+    width: 100%;
+    font-size: 14pt;
+}
+
+/* Styled the li tags and set text-decoration as none in order to remove the underline of the hyperlinks */
+.menu a {
+    color: #2e765e;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 2rem;
+}
+
+/* Styled menu buttons and set the curson to pointer in order for users to understand that they are also links */
+.menu_btn {
+    display: flex;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 0 2rem;
+    font-size: inherit;
+    font-size: 14pt;
+}
+
+/* Highlights the menu button when hovered over */
+.menu_btn:hover {
+    color: #1b4739;
+    transition: 0.75s;
+}
+
+/* Displays the sub menu when hovered over the main menu content */
+.menuItem:focus-within .submenu,
+.menuItem:hover .submenu {
+    max-height: 30vh;
+}
+
+/* Used transition an color change along with hover to show selected option more clearly */
+.menu a:hover {
+    color: #1b4739;
+    transition: 0.5s;
+}
+
+/* Styled the submenu such that it is hidden until the user hovers over the particular menu item */
+.submenu {
+    position: absolute;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 2s;
+    background-color: #2e765e;
+    padding-left: 0;
+    border: black;
+}
+
+.submenu a {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem;
+    color: white;
+    margin-top: 0.15rem;
+    font-size: 13pt;
+    /* background-color: #2e765e; */
+}
+
+.submenu a:hover {
+    /* color: rgb(250, 240, 223); */
+    color: #CCE2D7;
+    transition: 0.25s;
+}
+
+/* LANDING PAGE MAIN CONTENT PROPERTIES */
+/* Aligned the text in the center */
+.main_landing_page {
+    margin-top: 5rem;
+    padding: 2rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Styled the header by giving it a font-size and displayed it in uppercase letters */
+.main_landing_page h1 {
+    font-size: 45pt;
+    color: #2e765e;
+    font-family: sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/* Styled the paragraph to match the header */
+.main_landing_page p {
+    font-weight: 500;
+    margin-top: 1.5rem;
+    font-size: 23pt;
+    color: #1b4739;
+    font-family: sans-serif;
+}
+
+/* Styled the 'Quote' button */
+.discover_button button {
+    width: 15rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid #2e765e;
+    background-color: transparent;
+    color: #1b4739;
+    cursor: pointer;
+    position: relative;
+    border-radius: 0.25rem;
+    font-size: 14pt;
+}
+
+/* Added hover properties and transition for the 'Quote' button for styling purposes */
+.discover_button button:hover {
+    background-color: #1b4739;
+    transition: 0.5s;
+    color: #CCE2D7;
+    box-shadow: none;
+}
+
+/* FOOTER PROPERTIES */
+/* Provided font size and position for footer */
+.footer_landing_page {
+    bottom: 0rem;
+    right: 0rem;
+    font-size: small;
+    color: black;
+    text-align: right;
+    position: absolute;
+}
+
+/* Media Queries */
+@media (max-width: 330px){
+    html {
+        font-size: 55%;
+    }
+
+    .navbar .menu a {
+        display: none;
+        width: 100%;
+    }
+
+}
+
+@media (max-width:765px) {
+    .footer {
+      position: static;
+      right: unset;
+      bottom: unset;
+      padding-left: 10px;
+    }
+  
+    header h1{
+      font-size: medium;
+    }
+    .subheader {
+      margin-left: 0 !important;
+      font-size:xx-small;
+    }
+  
+    .submenu{
+      top: 2.8rem !important;
+     }
+   }
+  
+   
+@media only screen and (min-width:766px) and (max-width:1007px) {
+    footer {
+      position: static;
+      right: unset;
+      bottom: unset;
+      padding-left: 10px;
+    }
+  
+    header h1{
+      font-size: medium;
+    }
+  
+    .submenu{
+     top: 1.4rem !important;
+    }
+  
+    .subheader {
+      margin-left: 0 !important;
+      font-size:xx-small;
+    }
+  
+    .menu button {
+      padding: unset;
+    }
+  
+    .menu li:hover{
+      box-sizing: border-box;
+     background-color:rgb(1, 90, 1);;
+    }  
+}
+  
+   
+@media only screen and (max-width:1024px) {
+    footer {
+      position: static;
+      right: unset;
+      bottom: unset;
+      padding-left: 10px;
+    }
+  
+    header h1{
+      font-size: medium;
+    }
+  
+    .submenu{
+     top: 1.4rem;
+    }
+  
+    .subheader {
+      margin-left: 0 !important;
+      font-size:xx-small;
+    }
+  
+    .menu button {
+      padding: unset;
+    }
+  
+    .menu li:hover{
+      box-sizing: border-box;
+    } 
+}
